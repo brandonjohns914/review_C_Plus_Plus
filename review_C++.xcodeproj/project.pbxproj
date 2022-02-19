@@ -10,6 +10,7 @@
 		4191D9A927ACAC3D00974B4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4191D9A827ACAC3D00974B4F /* main.cpp */; };
 		41CCC7F427C06BFB00B3212C /* unordered_Linked_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41CCC7F227C06BFB00B3212C /* unordered_Linked_List.cpp */; };
 		41CCC7FB27C06CE700B3212C /* ordered_Linked_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41CCC7F927C06CE700B3212C /* ordered_Linked_List.cpp */; };
+		41F81B1627C07E7B003088BB /* Double_Linked_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41F81B1427C07E7B003088BB /* Double_Linked_List.cpp */; };
 		41FC39F127BF313600DC214E /* Linked_List_Review.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41FC39EF27BF313600DC214E /* Linked_List_Review.cpp */; };
 		41FFBCD827B1E82000FBB93C /* Grade_Report_Review.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41FFBCD627B1E82000FBB93C /* Grade_Report_Review.cpp */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,8 @@
 		41CCC7F227C06BFB00B3212C /* unordered_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unordered_Linked_List.cpp; sourceTree = "<group>"; };
 		41CCC7F927C06CE700B3212C /* ordered_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ordered_Linked_List.cpp; sourceTree = "<group>"; };
 		41EC8E2F27C06E92003CCE77 /* Linked_List_Review.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Linked_List_Review.hpp; sourceTree = "<group>"; };
+		41F81B1427C07E7B003088BB /* Double_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Double_Linked_List.cpp; sourceTree = "<group>"; };
+		41F81B1527C07E7B003088BB /* Double_Linked_List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Double_Linked_List.hpp; sourceTree = "<group>"; };
 		41FC39EF27BF313600DC214E /* Linked_List_Review.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_List_Review.cpp; sourceTree = "<group>"; };
 		41FFBCD627B1E82000FBB93C /* Grade_Report_Review.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Grade_Report_Review.cpp; sourceTree = "<group>"; };
 		41FFBCD727B1E82000FBB93C /* Grade_Report_Review.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grade_Report_Review.hpp; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 				41FC39EF27BF313600DC214E /* Linked_List_Review.cpp */,
 				41CCC7F227C06BFB00B3212C /* unordered_Linked_List.cpp */,
 				41CCC7F927C06CE700B3212C /* ordered_Linked_List.cpp */,
+				41F81B1427C07E7B003088BB /* Double_Linked_List.cpp */,
 			);
 			path = Linked_List_C;
 			sourceTree = "<group>";
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				41EC8E2F27C06E92003CCE77 /* Linked_List_Review.hpp */,
+				41F81B1527C07E7B003088BB /* Double_Linked_List.hpp */,
 			);
 			path = Linked_List_H;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4191D9A927ACAC3D00974B4F /* main.cpp in Sources */,
+				41F81B1627C07E7B003088BB /* Double_Linked_List.cpp in Sources */,
 				41FC39F127BF313600DC214E /* Linked_List_Review.cpp in Sources */,
 				41CCC7FB27C06CE700B3212C /* ordered_Linked_List.cpp in Sources */,
 				41FFBCD827B1E82000FBB93C /* Grade_Report_Review.cpp in Sources */,
