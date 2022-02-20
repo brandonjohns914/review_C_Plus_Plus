@@ -44,7 +44,10 @@ public:
     array_List_Type(const array_List_Type<Type>& otherList);
     //destructor
     ~array_List_Type();
-    int binary_Search(const Type &item) const; 
+    int binary_Search(const Type &item) const;
+    int min_Location(int first, int last);
+    int swap(int first, int second);
+    void selection_sort(); 
     
     
 };

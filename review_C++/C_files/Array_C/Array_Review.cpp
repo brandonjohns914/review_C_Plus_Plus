@@ -290,3 +290,35 @@ int array_List_Type<Type>:: binary_Search(const Type &item) const
     else
         return -1; 
 }
+
+
+template <class Type>
+int array_List_Type<Type>:: min_Location(int first, int last)
+{
+    int min_Index;
+    min_Index = first;
+    for(int i = first + 1; i <= last; i++)
+        if(list[i] <list[min_Index])
+            min_Index=i;
+    
+    return min_Index; 
+}
+template <class Type>
+int array_List_Type<Type>:: swap(int first, int second)
+{
+    Type temp;
+    
+    temp=list[first];
+    list[first]=list[second];
+    list[second]=temp;
+}
+template <class Type>
+void array_List_Type<Type>:: selection_sort()
+{
+    int min_Index;
+    for(int i -0; i<length -1; i++)
+    {
+        min_Index = min_Location(i, length -1);
+        swap(i, min_Index);
+    }
+}
