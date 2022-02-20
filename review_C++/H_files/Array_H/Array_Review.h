@@ -44,7 +44,7 @@ public:
     array_List_Type(const array_List_Type<Type>& otherList);
     //destructor
     ~array_List_Type();
-    
+    int binary_Search(const Type &item) const; 
     
     
 };

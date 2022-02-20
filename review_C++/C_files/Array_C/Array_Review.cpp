@@ -268,3 +268,25 @@ array_List_Type<Type>:: ~array_List_Type()
 {
     delete [] list;
 }
+
+template <class Type>
+int array_List_Type<Type>:: binary_Search(const Type &item) const
+{
+    int first = 0;
+    int last = length -1;
+    int mid = (first + last)/2;
+    bool found = false;
+    while(first<= last && !found)
+    {
+        if(list[mid]==item)
+            found = true;
+        else if(list[mid]<item)
+            last = mid-1;
+        else
+            first = mid+1;
+    }
+    if(found)
+        return mid;
+    else
+        return -1; 
+}
