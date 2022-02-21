@@ -84,6 +84,12 @@ public:
     void insert_First(const Type& new_Item);
     void insert_Last(const Type& new_Item);
     void delete_Node(const Type& delete_Item);
+    void linked_Insertion_Sort();
+    void divide_List(node_Type<Type> *first1 , node_Type<Type>* &first2);
+    
+    node_Type<Type>* merge_List(node_Type<Type> *first1 , node_Type<Type>* &first2);
+    void recursive_Merge_Sort(node_Type<Type> * &head);
+    void merge_Sort();
 protected:
     int count;
     node_Type<Type> *first;

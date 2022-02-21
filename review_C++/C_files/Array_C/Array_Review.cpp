@@ -303,6 +303,7 @@ int array_List_Type<Type>:: min_Location(int first, int last)
     
     return min_Index; 
 }
+
 template <class Type>
 int array_List_Type<Type>:: swap(int first, int second)
 {
@@ -320,5 +321,109 @@ void array_List_Type<Type>:: selection_sort()
     {
         min_Index = min_Location(i, length -1);
         swap(i, min_Index);
+    }
+}
+
+template <class Type>
+void array_List_Type<Type>:: insertion_Sort()
+{
+    int first_Out_Of_Order;
+    int location;
+    for(first_Out_Of_Order =1; first_Out_Of_Order< length; )
+    {
+        if (list[first_Out_Of_Order]<list[first_Out_Of_Order 0-1]) {
+            temp = list[first_Out_Of_Order];
+            location =first_Out_Of_Order;
+            do {
+                list[location]=list[location-1];
+                location--;
+            } while (location> 0 && list[location-1]>temp);
+            
+            list[location]=temp;
+        }
+    }
+}
+
+template <class Type>
+void array_List_Type<Type>:: partition(int first, int last)
+{
+    Type pivot;
+    int index;
+    int small_Index;
+    swap(first,(first+last)/2);
+    pivot=list[first];
+    small_Index=first;
+    
+    for(index=first+1; index<= last; index++)
+    {
+        if(list[index]<pivot)
+        {
+            small_Index++;
+            swap(small_Index, index);
+        }
+    }
+    swap(first,small_Index);
+    return small_Index; 
+}
+
+template <class Type>
+void array_List_Type<Type>:: recursive_Quick_Sort(int first, int last)
+{
+    int pivot_Location;
+    if(first<last)
+    {
+        pivot_Location = partition(first,last);
+        recursive_Quick_Sort(first,pivot_Location-1);
+        recursive_Quick_Sort(pivot_Location+1,last);
+    }
+}
+
+template <class Type>
+void array_List_Type<Type>:: quick_Sort(int first, int last)
+{
+    recursive_Quick_Sort(0,length-1);
+}
+
+
+template <class Type>
+void array_List_Type<Type>::  heapify(int low, int high)
+{
+    int large_Index;
+    Type temp = list[low];
+    
+    while (large_Index <= high)
+    {
+        if (large_Index < high)
+            if (list[large_Index] < list[large_Index + 1])
+                large_Index = large_Index + 1;
+        if (temp > list[large_Index])
+            break;
+        else
+        {
+            list[low] = list[large_Index];
+    
+            low = large_Index;
+            largeIndex = 2 * low + 1;
+        }
+    }
+    list[low] = temp;
+}
+template <class Type>
+void array_List_Type<Type>::  build_Heap()
+{
+    for(i = length/2 -1; i>=0; i--)
+        heapify(index, length-1);
+}
+template <class Type>
+void array_List_Type<Type>::  heap_Sort()
+{
+    Type temp;
+    build_Heap();
+    for(int last_Out_Of_Order= length -1; last_Out_Of_Order>=0; last_Out_Of_Order--)
+    {
+        temp = list[last_Out_Of_Order];
+        list[last_Out_Of_Order]= list[0];
+        list[0]=temp;
+        heapify(0,last_Out_Of_Order-1);
     }
 }

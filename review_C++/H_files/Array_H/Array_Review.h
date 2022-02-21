@@ -47,7 +47,15 @@ public:
     int binary_Search(const Type &item) const;
     int min_Location(int first, int last);
     int swap(int first, int second);
-    void selection_sort(); 
+    void selection_sort();
+    void insertion_Sort();
+    void partition(int first, int last);
+    void recursive_Quick_Sort(int first, int last);
+    void quick_Sort(int first, int last);
+    
+    void heapify(int low, int high);
+    void build_Heap();
+    void heap_Sort();
     
     
 };
